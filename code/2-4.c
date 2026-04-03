@@ -25,3 +25,5 @@ int main()
     printf("%ld %s\n", val, end);
     return 0;
 }
+
+//fail

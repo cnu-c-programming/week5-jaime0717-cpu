@@ -12,6 +12,3 @@ int main() {
     echo();
     return 0;
 }
-
-
-//check
