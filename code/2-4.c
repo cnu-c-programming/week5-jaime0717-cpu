@@ -4,13 +4,14 @@ long my_strtol(char *str, char **endtr)
 {
     long res = 0;
 
-    while (47 < *str < 58)
+    while (47 < *str && *str < 58)
     {
-        res += *str;
+        res *= 10;
+        res += *str-'0';
         str++;
     }
 
-    str = *endtr;
+    *endtr = str;
 
     return res;
 }
@@ -25,5 +26,3 @@ int main()
     printf("%ld %s\n", val, end);
     return 0;
 }
-
-//fail
